@@ -89,8 +89,7 @@ function preload() {
 function setup() {
   createCanvas(1800, 1500, WEBGL);
   shaderProgram = createShader(vertShader, fragShader);
-  noStroke();![walls](https://github.com/user-attachments/assets/9041e245-e9c4-4dfc-a020-7b4b31bbef0a)
-
+  noStroke();
 }
 function draw() {
   shader(shaderProgram);
