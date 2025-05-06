@@ -16,6 +16,7 @@ let vertShader = `
     gl_Position = vec4(aPosition, 1.4);
   }
 `;
+
 let fragShader = `
   precision mediump float;
   uniform sampler2D uTexture;
@@ -24,6 +25,7 @@ let fragShader = `
   float random(vec2 st) {
     return fract(sin(dot(st.xy, vec2(12.9898,78.233))) * 43758.5453123);
   }
+  
   float noise(vec2 st) {
     vec2 i = floor(st);
     vec2 f = fract(st);
