@@ -5,6 +5,8 @@ Within the fragment shader, it applies a combination of flowing displacement and
 The image texture is warped by this animated noise to simulate a kind of fluid, wave-like motion. It then overlays soft glowing "blobs" of color—shifting between sky blue and pink over time—based on additional FBM patterns. 
 These blobs are subtly added to the image, giving it a shimmering, ethereal quality. 
 
+Check out the code here: https://editor.p5js.org/Kmorrissey1/sketches/0VnlceXUN
+
 let img;
 let shaderProgram;
 let vertShader = `
@@ -86,7 +88,8 @@ function preload() {
 function setup() {
   createCanvas(1800, 1500, WEBGL);
   shaderProgram = createShader(vertShader, fragShader);
-  noStroke();
+  noStroke();![walls](https://github.com/user-attachments/assets/9041e245-e9c4-4dfc-a020-7b4b31bbef0a)
+
 }
 function draw() {
   shader(shaderProgram);
