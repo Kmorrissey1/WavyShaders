@@ -1,3 +1,4 @@
+![backgroundformushroom](https://github.com/user-attachments/assets/5b158065-39ca-4cbe-a8d5-61b59ce9b732)
 # WavyShaders
 This shader code creates a dynamic, dreamy visual distortion effect on an image in a p5.js sketch. It uses a custom vertex and fragment shader.
 The vertex shader passes texture coordinates to the fragment shader, which does the heavy lifting. 
